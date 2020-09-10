@@ -114,7 +114,107 @@
 // }
 
 //Realizar un programa que pida cargar una fecha cualquiera, luego verificar si dicha fecha corresponde a Navidad (se debe cargar por separado el dia, el mes y el año)
+// let dia = prompt('Ingrese dia: ');
+// dia = parseInt(dia);
+// let mes = prompt('Ingrese mes: ');
+// mes = parseInt(mes);
+// let anio = prompt('Ingrese el año: ');
+// if(dia == 25 && mes == 12){
+//     document.write(dia + "-" + mes + "-" + anio + " " + "es navidad");
+// }else{
+//     document.write(dia + "-" + mes + "-"+ anio + " " +"no es navidad");
+// }
 
-let dia = prompt('Ingrese dia: ');
-let mes = prompt('Ingrese mes: ');
-let anio = prompt('Ingrese el año: ');
+//Se ingresan tres valores por teclado, si todos son iguales se imprime la suma del primero con el segundo y a este resultado se lo multiplica por el tercero (tener en cuenta que puede haber tres condiciones simples)
+// let num1 = prompt('Ingrese numero uno: ');
+// num1 = parseInt(num1);
+// let num2 = prompt('Ingrese numero dos: ');
+// num2 = parseInt(num2);
+// let num3 = prompt('Ingrese numero tres: ');
+// num3 = parseInt(num3);
+
+// if(num1 == num2 && num1 == num3){
+//     document.write('son iguales');
+//     let suma = (num1 + num2) * num3;
+//     document.write('el resultado es: ' + suma);
+// }else{
+//     document.write('no son iguales');
+// }
+
+//Se ingresan por teclado tres números, si todos los valores ingresados son menores a 10, imprimir en la página la leyenda ' Todos los números son menores a diez'.
+// let num1 = prompt('Ingrese numero uno: ');
+// num1 = parseInt(num1);
+// let num2 = prompt('Ingrese numero dos: ');
+// num2 = parseInt(num2);
+// let num3 = prompt('Ingrese numero tres: ');
+// num3 = parseInt(num3);
+// if(num1 < 10 && num2 < 10 && num3 < 10){
+//     document.write('son menores a 10');
+// }else{
+//     document.write('son mayores a 10');
+// }
+
+//Escribir un programa que pida ingresar la coordenada de un punto en el plano, es decir dos valores enteros x e y.
+//Posteriormente imprimir en pantalla en qué cuadrante se ubica dicho punto. (1º Cuadrante si x > 0 Y y > 0 , 2º Cuadrante: x < 0 Y y > 0, etc.)
+// let x = prompt('Ingrese cordenada x: ');
+// x = parseInt(x);
+// let y = prompt('Ingrese coordenada y: ');
+// y = parseInt(y);
+// if(x > 0 && y > 0){
+//     document.write('primer cuadrante');
+// }else{
+//     if(x < 0 && y > 0){
+//         document.write('segundo cuadrante');
+//     }else{
+//         if( x < 0 && y < 0){
+//             document.write('tercer cuadrante');
+//         }else{
+//             document.write('cuarto cuadrante');
+//         }
+//     }
+// }
+
+//De un operario se conoce su sueldo y los años de antigüedad. Se pide confeccionar un programa que lea los datos de entrada e informe
+// a) Si el sueldo es inferior a 500 y su antigüedad es igual o superior a 10 años, otorgarle un aumento del 20 %, mostrar el sueldo a pagar.
+// b) Si el sueldo es inferior a 500 pero su antigüedad es menor a 10 años, otorgarle un aumento de 5 %.
+// c) Si el sueldo es mayor o igual a 500 mostrar el sueldo en la página sin cambios.
+// let nombre = prompt('Ingrese nombre: ');
+// let sueldo = prompt('Ingrese sueldo: ');
+// sueldo = parseInt(sueldo);
+// let antiguedad = prompt('Ingrese los años de antiguedad: ');
+// antiguedad = parseInt(antiguedad);
+// if(sueldo >= 500){
+//     document.write(nombre + ' su sueldo es: ' + sueldo);
+// }else{
+//     if(sueldo < 500 && antiguedad >= 10){
+//         let total = 20 * sueldo / 100;
+//         let sueldoTotal = sueldo + total;
+//         document.write(nombre + ' sueldo mensual: ' + sueldoTotal);
+//     }else{
+//         if(sueldo < 500 && antiguedad < 10){
+//             let total = 5 * sueldo / 100;
+//             let sueldoTotal = sueldo + total;
+//             document.write(nombre +  ' sueldo mensual: ' + sueldoTotal);
+//         }
+//     }
+// }
+
+//Se ingresan por teclado tres números, si al menos uno de los valores ingresados es menores a 10, imprimir en la página la leyenda 'Alguno de los números es menor a diez'.
+// let num1 = prompt('Ingrese numer uno: ');
+// num1 = parseInt(num1);
+// let num2 = prompt('Ingrese numero dos: ');
+// num2 = parseInt(num2);
+// let num3 = prompt('Ingrese numero tres: ');
+// num3 = parseInt(num3);
+// if(num1 < 10 || num2 < 10 || num3 < 10){
+//     if(num1 < 10){
+//         document.write(num1 + ' Es menor a diez');
+//     }else{
+//         if(num2 < 10){
+//             document.write(num2 + ' Es menor a diez'); 
+//         }else{
+//             document.write(num3 + ' Es menor a diez');
+//         }
+//     }
+// }
+
