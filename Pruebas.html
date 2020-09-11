@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+</head>
+<body>
+    <input type="checkbox" onClick="toggle(this)" /> Seleccionar/Deseleccionar todos<br><br>
+    <input type="checkbox" name="dinamico" > 1<br/>
+    <input type="checkbox" name="dinamico" > 2<br/>
+    <input type="checkbox" name="dinamico" > 3<br/>
+    <input type="checkbox" name="dinamico" > 4<br/>
+    <script>
+        function toggle(source) {
+            console.log('entra al metodo');
+            checkboxes = document.getElementsByName('dinamico');
+                for(var i=0, n=checkboxes.length;i<n;i++) {
+                    checkboxes[i].checked = source.checked;
+                }
+            }
+    </script>
+</body>
+</html>
