@@ -238,11 +238,47 @@
 
 // }
 
-function toggle(source) {
-    checkboxes = document.getElementsByName('dinamico');
-  
-    for(var i=0, n=checkboxes.length;i<n;i++) {
-      checkboxes[i].checked = source.checked;
+//Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado).
+// var x;
+// x=1;
+// while (x<=25)
+// {
+//   //document.write(x);
+//   document.write('<br>');
+//   x=x+1;
+//   let multi = x * 11;
+//   document.write(multi);
+
+// }
+
+
+//Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc.
+// var x;
+// x = 0;
+// while(x <= 500){
+//     document.write(x);
+//     document.write('<br>');
+//     x = x + 8;
+
+// }
+
+
+//Escribir un programa que lea 10 notas de alumnos y nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores.
+let x = 0;
+let notas;
+let sumaMas = 0;
+let sumaMenos = 0;
+while(x <10){
+    nota = prompt('Ingrese Nota: ');
+    nota = parseInt(nota);
+    if(nota >= 7){
+        sumaMas = sumaMas + 1;                                         
+    }else{
+        sumaMenos = sumaMenos + 1;
     }
-  
-  }
+    x = x + 1;
+}
+document.write('total de estudiantes con mayor o igual a 7 : ' + sumaMas);
+document.write('<br>');
+document.write('Cantidad de alumnos con notas menores a 7:'+sumaMenos);
+
