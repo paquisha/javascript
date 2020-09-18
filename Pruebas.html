@@ -6,19 +6,21 @@
     <title>Pruebas</title>
 </head>
 <body>
-    <input type="checkbox" onClick="toggle(this)" /> Seleccionar/Deseleccionar todos<br><br>
-    <input type="checkbox" name="dinamico" > 1<br/>
-    <input type="checkbox" name="dinamico" > 2<br/>
-    <input type="checkbox" name="dinamico" > 3<br/>
-    <input type="checkbox" name="dinamico" > 4<br/>
     <script>
-        function toggle(source) {
-            console.log('entra al metodo');
-            checkboxes = document.getElementsByName('dinamico');
-                for(var i=0, n=checkboxes.length;i<n;i++) {
-                    checkboxes[i].checked = source.checked;
-                }
-            }
+        let fechita = prompt('Ingrese fecha de nacimiento');
+        console.log(fechita);
+        //let fechaNacimiento = new Date(fechita);
+        let fechaNacimiento = Date.parse(fechita);
+        console.log(fechaNacimiento);
+        let ahora = new Date();
+        let agnios = ahora.getFullYear() - fechaNacimiento.getFullYear();
+
+        fechaNacimiento.setFullYear(ahora.getFullYear);
+
+        if(ahora < fechaNacimiento){
+            --agnios;
+        }
+        console.log(agnios);
     </script>
 </body>
 </html>

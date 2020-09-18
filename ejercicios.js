@@ -264,21 +264,65 @@
 
 
 //Escribir un programa que lea 10 notas de alumnos y nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores.
-let x = 0;
-let notas;
-let sumaMas = 0;
-let sumaMenos = 0;
-while(x <10){
-    nota = prompt('Ingrese Nota: ');
-    nota = parseInt(nota);
-    if(nota >= 7){
-        sumaMas = sumaMas + 1;                                         
-    }else{
-        sumaMenos = sumaMenos + 1;
-    }
-    x = x + 1;
+// let x = 0;
+// let notas;
+// let sumaMas = 0;
+// let sumaMenos = 0;
+// while(x < 10){
+//     nota = prompt('Ingrese Nota: ');
+//     nota = parseInt(nota);
+//     if(nota >= 7){
+//         sumaMas = sumaMas + 1;
+//     }else{
+//         sumaMenos = sumaMenos + 1;
+//     }    
+//     x = x + 1;
+// }
+// document.write('total de estudiantes con mayor o igual a 7 : ' + sumaMas);
+// document.write('<br>');
+// document.write('Cantidad de alumnos con notas menores a 7:'+sumaMenos);
+
+//Se ingresan un conjunto de 5 alturas de personas por teclado. Mostrar la altura promedio de las personas.
+// let x = 0;
+// let promedio = 0;
+// while(x <= 5){
+//     let altura = prompt('Ingrese la altura: ');
+//     altura = parseInt(altura);
+//     promedio = promedio + altura;
+//     console.log(promedio);    
+//     x = x + 1;
+// }
+// let prom = promedio/5;
+// document.write('el tama;o promedio es: ' + prom);
+
+
+//En una empresa trabajan 5 empleados cuyos sueldos oscilan entre $100 y $500, realizar un programa que lea los sueldos que cobra cada empleado e informe cuántos empleados cobran entre $100 y $300 y cuántos cobran más de $300. Además el programa deberá informar el importe que gasta la empresa en sueldos al personal.
+var cont1=0;
+var cont2=0;
+var total=0;
+var sueldo;
+var x=0;
+while (x<5)
+{
+  sueldo=prompt('Ingrese el sueldo','');
+  sueldo=parseInt(sueldo);
+  if (sueldo<=300)
+  {
+    cont1=cont1+1;
+  }
+  else
+  {
+    cont2=cont2+1;
+  }
+  total=total+sueldo;
+  x=x+1;
 }
-document.write('total de estudiantes con mayor o igual a 7 : ' + sumaMas);
+document.write('Cantidad de empleados que cobran 300 o menos:'+cont1);
 document.write('<br>');
-document.write('Cantidad de alumnos con notas menores a 7:'+sumaMenos);
+document.write('Cantidad de empleados que cobran más de 300:'+cont2);
+document.write('<br>');
+document.write('Gastos en sueldos en la empresa:'+total);
+
+
+
 

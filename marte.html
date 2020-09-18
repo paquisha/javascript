@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Marte</title>
+</head>
+<body>
+    <h1>Pesos en otros planetas</h1>    
+    <p>En la tierra pesas distinto que en otros planetas</p>
+
+    <script>
+        let peso = prompt('Ingrese su peso: ');
+        peso = parseFloat(peso);
+        let planeta = prompt('Ingrese planeta');
+        let gTierra = 9.8;
+        let gMarte = 3.7;
+        let gJupiter = 24.7;
+
+        switch(planeta){
+            case 'marte':
+                pesoFinal = peso * gMarte / gTierra;
+                document.write("Tu peso en marte es: <strong>" + pesoFinal.toFixed(2) +"kilos</strong>");
+                break;
+            case 'jupiter':
+                pesoFinal = peso * gJupiter / gTierra;
+                document.write("Tu peso en jupiter es: <strong>" + pesoFinal.toFixed(2) +"kilos</strong>");
+                break;
+            default: 
+                document.write('Solo puede ingresar de marte y jupiter');
+        }
+        
+    </script>
+</body>
+</html>
