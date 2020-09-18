@@ -297,31 +297,31 @@
 
 
 //En una empresa trabajan 5 empleados cuyos sueldos oscilan entre $100 y $500, realizar un programa que lea los sueldos que cobra cada empleado e informe cuántos empleados cobran entre $100 y $300 y cuántos cobran más de $300. Además el programa deberá informar el importe que gasta la empresa en sueldos al personal.
-var cont1=0;
-var cont2=0;
-var total=0;
-var sueldo;
-var x=0;
-while (x<5)
-{
-  sueldo=prompt('Ingrese el sueldo','');
-  sueldo=parseInt(sueldo);
-  if (sueldo<=300)
-  {
-    cont1=cont1+1;
-  }
-  else
-  {
-    cont2=cont2+1;
-  }
-  total=total+sueldo;
-  x=x+1;
-}
-document.write('Cantidad de empleados que cobran 300 o menos:'+cont1);
-document.write('<br>');
-document.write('Cantidad de empleados que cobran más de 300:'+cont2);
-document.write('<br>');
-document.write('Gastos en sueldos en la empresa:'+total);
+// var cont1=0;
+// var cont2=0;
+// var total=0;
+// var sueldo;
+// var x=0;
+// while (x<5)
+// {
+//   sueldo=prompt('Ingrese el sueldo','');
+//   sueldo=parseInt(sueldo);
+//   if (sueldo<=300)
+//   {
+//     cont1=cont1+1;
+//   }
+//   else
+//   {
+//     cont2=cont2+1;
+//   }
+//   total=total+sueldo;
+//   x=x+1;
+// }
+// document.write('Cantidad de empleados que cobran 300 o menos:'+cont1);
+// document.write('<br>');
+// document.write('Cantidad de empleados que cobran más de 300:'+cont2);
+// document.write('<br>');
+// document.write('Gastos en sueldos en la empresa:'+total);
 
 
 
