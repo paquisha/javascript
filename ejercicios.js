@@ -323,6 +323,102 @@
 // document.write('<br>');
 // document.write('Gastos en sueldos en la empresa:'+total);
 
+//Realizar un programa que imprima 20 términos de la serie 5 - 10 - 15 - 20, etc. (No se ingresan valores por teclado)
+// let x = 0;
+// let acumulador = 0;
+// let serie = 5;
+// while(x < 20){
+//     acumulador = acumulador + serie;
+//     document.write(''+ acumulador + ' - ');        
+//     x = x + 1;
+// }
+
+//Mostrar los múltiplos de 10 hasta el valor 1500.
+//Debe aparecer en pantalla 10 - 20 -30 etc.
+// let contador = 0;
+// let acumulador = 0;
+// let serie = 10;
+// while(contador < 150){
+//     acumulador = acumulador + serie;
+//     document.write(acumulador + ' - ');
+//     contador = contador + 1;
+// }
 
 
+//Realizar un programa que permita cargar dos listas de 3 valores cada una. Informar con un mensaje cual de las dos listas tiene un valor acumulado mayor (mensajes 'Lista 1 mayor', 'Lista 2 mayor', 'Listas iguales')
+//Tener en cuenta que puede haber dos o más estructuras repetitivas en un algoritmo.
 
+// let x1 = 0;
+// let lista1 = 0;
+// let lista2 = 0;
+// let x2 = 0;
+// while(x1 < 3){
+//     let numero = prompt('ingrese numeros');
+//     numero = parseInt(numero);
+//     lista1 = lista1 + numero;
+//     x1 = x1 + 1;
+// }
+// document.write('lista 1 suma: ' + lista1);
+// document.write('<br>');
+
+// while(x2 < 3){
+//     let numero2 = prompt('ingrese numeros');
+//     numero2 = parseInt(numero2);
+//     lista2 = lista2 + numero2;
+//     x2 =  x2 + 1;
+// }
+// document.write('lista 2 suma: ' + lista2);
+// document.write('<br>')
+
+// if(lista1 > lista2 ){
+//     document.write('Lista uno es mayor ' + lista1);
+// }else{
+//     document.write('lista 2 es mayor ' + lista2);
+// }
+
+//Desarrollar un programa que permita cargar 5 números enteros y luego nos informe cuántos valores fueron pares y cuántos impares.
+//Emplear el operador "%" en la condición de la estructura condicional.
+//	if (valor%2==0)
+//El operador "%" retorna el resto de la división valor / 2. Por ejemplo: 12 % 2, retorna 0; 13 % 2, retorna 1, porque el resto de dividir 13 en 2 es 1.
+
+// let contador = 0;
+// let par = 0;
+// let impar = 0;
+// let acumulador = 0;
+// while(contador < 5){
+//     let numeros = prompt('Ingrese valores: ');
+//     numeros = parseInt(numeros);
+//     if(numeros%2 == 0){
+//         par = par + 1;
+//     }else{
+//         impar = impar + 1;
+//     }
+//     contador = contador + 1;
+// }
+// document.write('cantidad de pares: ' + par);
+// document.write('<br>');
+// document.write('cantidad de impares: ' + impar);
+
+//Confeccionar un programa que lea 3 pares de datos, cada par de datos corresponde a la medida de la base y la altura de un triángulo. El programa deberá informar:
+// a) De cada triángulo la medida de su base, su altura y su superficie.
+// b) La cantidad de triángulos cuya superficie es mayor a 12.
+// let contador;
+// let base;
+// let altura;
+// let superficie;
+// let contador2 = 0;
+// for(f = 1; f <= 3; f++ ){
+//     base = prompt('Ingrese la base: ');
+//     base = parseInt(base);
+//     altura = prompt('Ingrese la altura: ');
+//     altura = prompt(altura);
+//     superficie = base * altura / 2;
+//     if(superficie > 12){
+//         contador2++;
+//     }
+//     document.write('triangulo Nro: ' + f +'<br>');
+//     document.write('Base: ' + base + '<br>');
+//     document.write('altura: ' + altura + '<br>');
+//     document.write('Superficie: ' + superficie + '<br>');
+// }
+// document.write('cantidad de triangulos con superficie > a 12: ' + contador2);
