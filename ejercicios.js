@@ -11,8 +11,8 @@
 //     suma = num1 + num2;
 //     resta = num1 - num2;
 //     document.write('la suma es: ' + suma);
-//     document.write('<br>');    
-//     document.write('la resta es: ' + resta);  
+//     document.write('<br>');
+//     document.write('la resta es: ' + resta);
 // }else{
 //     multiplicacion = num1 *  num2;
 //     division = num1 / num2;
@@ -211,7 +211,7 @@
 //         document.write(num1 + ' Es menor a diez');
 //     }else{
 //         if(num2 < 10){
-//             document.write(num2 + ' Es menor a diez'); 
+//             document.write(num2 + ' Es menor a diez');
 //         }else{
 //             document.write(num3 + ' Es menor a diez');
 //         }
@@ -221,10 +221,10 @@
 //Solicitar el ingreso alguna de estas palabras (casa, mesa, perro, gato) luego mostrar la palabra traducida en inglés. Es decir, si se ingresa 'casa' debemos mostrar el texto 'house' en la página.
 // let item = prompt('Ingrese alguna de estas palabras (casa, mesa, perro, gato)');
 // switch(item){
-//     case 'casa': 
+//     case 'casa':
 //         document.write('House');
 //         break;
-//     case 'mesa': 
+//     case 'mesa':
 //         document.write('table');
 //         break;
 //     case 'perro':
@@ -275,7 +275,7 @@
 //         sumaMas = sumaMas + 1;
 //     }else{
 //         sumaMenos = sumaMenos + 1;
-//     }    
+//     }
 //     x = x + 1;
 // }
 // document.write('total de estudiantes con mayor o igual a 7 : ' + sumaMas);
@@ -289,7 +289,7 @@
 //     let altura = prompt('Ingrese la altura: ');
 //     altura = parseInt(altura);
 //     promedio = promedio + altura;
-//     console.log(promedio);    
+//     console.log(promedio);
 //     x = x + 1;
 // }
 // let prom = promedio/5;
@@ -329,7 +329,7 @@
 // let serie = 5;
 // while(x < 20){
 //     acumulador = acumulador + serie;
-//     document.write(''+ acumulador + ' - ');        
+//     document.write(''+ acumulador + ' - ');
 //     x = x + 1;
 // }
 
@@ -402,23 +402,70 @@
 //Confeccionar un programa que lea 3 pares de datos, cada par de datos corresponde a la medida de la base y la altura de un triángulo. El programa deberá informar:
 // a) De cada triángulo la medida de su base, su altura y su superficie.
 // b) La cantidad de triángulos cuya superficie es mayor a 12.
-// let contador;
 // let base;
 // let altura;
 // let superficie;
 // let contador2 = 0;
-// for(f = 1; f <= 3; f++ ){
-//     base = prompt('Ingrese la base: ');
+// for(let i = 1; i <= 3; i++){
+//     base = prompt('Ingrese la base');
 //     base = parseInt(base);
-//     altura = prompt('Ingrese la altura: ');
-//     altura = prompt(altura);
-//     superficie = base * altura / 2;
+//     altura = prompt('Ingrese la altura');
+//     altura = parseInt(altura);
+//     superficie = base * altura/2;
 //     if(superficie > 12){
 //         contador2++;
 //     }
-//     document.write('triangulo Nro: ' + f +'<br>');
-//     document.write('Base: ' + base + '<br>');
-//     document.write('altura: ' + altura + '<br>');
+//     document.write('triangulo Nro: ' + i + '<br>');
+//     document.write('Base: '+ base + '<br>');
+//     document.write('Altura: ' + altura + '<br>');
 //     document.write('Superficie: ' + superficie + '<br>');
 // }
-// document.write('cantidad de triangulos con superficie > a 12: ' + contador2);
+// document.write('la cantidad de triangulos con superficie mayor a 12: ' + contador2);
+
+//Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados.
+// let contador = 0;
+// let contador2 = 0;
+// let acumulador = 0;
+// let suma;
+// for(contador = 1; contador <= 10; contador++){
+//     let numero = prompt('Ingrese numeros: ');
+//     numero = parseInt(numero);
+//     if(contador > 5){
+//         console.log(numero);
+//         acumulador = acumulador + numero;  
+       
+//     }
+//     document.write('los numeros son: ' + numero + '<br>');
+    
+// }
+// document.write('la suma de los ultimos 5 numeros es: '+ acumulador);
+
+//Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50).
+
+// let contador;
+// let tabla = 5;
+// let resultado;
+// for(contador = 1; contador <= 12; contador++){
+//     resultado = contador * tabla;
+//     document.write(contador +' * '+ tabla +' = '+ resultado +'<br>');        
+// }
+
+//Confeccionar un programa que permita ingresar un valor del 1 al 10 y nos muestre la tabla de multiplicar del mismo (los primeros 12 términos)
+//Ejemplo: Si ingreso 3 deberá aparecer en pantalla los valores 3, 6, 9, hasta el 36.
+
+// let contador = 0;
+// let resultado;
+// let tabla = prompt('ingrese la tabla de multiplicar');
+// tabla = parseInt(tabla);
+// if(tabla > 10){
+//     document.write('solo puede ser valores del 1 al 10:')
+// }else{
+//     for(contador = 1; contador <=12; contador++){
+//         resultado = contador * tabla;
+//         document.write(tabla + ' * ' + contador + ' = ' + resultado + '<br>');
+//     }
+// }
+
+
+
+
