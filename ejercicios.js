@@ -467,5 +467,48 @@
 // }
 
 
+// Realizar un programa que lea los lados de 4 triángulos, e informar:
+// a) De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales), isósceles (dos lados iguales), o escaleno (ningún lado igual)
+// b) Cantidad de triángulos de cada tipo.
+// c) Tipo de triángulo del que hay menor cantidad.
 
-
+let contador = 0;
+let contador2 = 0;
+let contador3 = 0;
+let acumulador = 0;
+let lado;
+let lado2;
+let lado3;
+for(let i = 1; i <= 4; i++){
+   lado = prompt('Ingrese primer lado: ');
+   lado = parseInt(lado);
+   lado2 = prompt('ingrese segundo lado: ');
+   lado2 = parseInt(lado2);
+   lado3 = prompt('Ingrese tercer lado: ');
+   lado3 = parseInt(lado3);
+   if(lado == lado2 && lado == lado3){
+      document.write('es un triangulo equilatero.<br>');
+      contador++;
+   }else{
+      if(lado == lado2 || lado == lado3 || lado2 == lado3){
+         document.write('es un Triangulo isoceles.<br>');
+         contador2++;
+      }else{
+         document.write('es un triangulo escaleno.<br>');
+         contador3++;
+      }
+   }
+}
+document.write('<br>');
+document.write('cantidad de triangulos equilateros: ' + contador +'<br>');
+document.write('cantidad de triangulos isoceles: ' + contador2 + '<br>');
+document.write('Cantidad de trinagulos escalenos: ' + contador3 + '<br>');
+if(contador < contador2 && contador < contador3){
+   document.write('Se ingresaron menos triangulos equilateros');
+}else{
+   if(contador2<contador3){
+      document.write('Se ingresaron menos triangulos isoceles');
+   }else{
+      document.write('Se ingresaron menos tringualos escalenos');
+   }
+}
