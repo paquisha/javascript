@@ -472,43 +472,81 @@
 // b) Cantidad de triángulos de cada tipo.
 // c) Tipo de triángulo del que hay menor cantidad.
 
+// let contador = 0;
+// let contador2 = 0;
+// let contador3 = 0;
+// let acumulador = 0;
+// let lado;
+// let lado2;
+// let lado3;
+// for(let i = 1; i <= 4; i++){
+//    lado = prompt('Ingrese primer lado: ');
+//    lado = parseInt(lado);
+//    lado2 = prompt('ingrese segundo lado: ');
+//    lado2 = parseInt(lado2);
+//    lado3 = prompt('Ingrese tercer lado: ');
+//    lado3 = parseInt(lado3);
+//    if(lado == lado2 && lado == lado3){
+//       document.write('es un triangulo equilatero.<br>');
+//       contador++;
+//    }else{
+//       if(lado == lado2 || lado == lado3 || lado2 == lado3){
+//          document.write('es un Triangulo isoceles.<br>');
+//          contador2++;
+//       }else{
+//          document.write('es un triangulo escaleno.<br>');
+//          contador3++;
+//       }
+//    }
+// }
+// document.write('<br>');
+// document.write('cantidad de triangulos equilateros: ' + contador +'<br>');
+// document.write('cantidad de triangulos isoceles: ' + contador2 + '<br>');
+// document.write('Cantidad de trinagulos escalenos: ' + contador3 + '<br>');
+// if(contador < contador2 && contador < contador3){
+//    document.write('Se ingresaron menos triangulos equilateros');
+// }else{
+//    if(contador2<contador3){
+//       document.write('Se ingresaron menos triangulos isoceles');
+//    }else{
+//       document.write('Se ingresaron menos tringualos escalenos');
+//    }
+// }
+
+
+//Escribir un programa que pida ingresar coordenadas (x,y) que representan puntos en el plano. Informar cuántos puntos se han ingresado en el primer, segundo, tercer y cuarto cuadrante. Al comenzar el programa se pide que se ingrese la cantidad de puntos a procesar.
+
 let contador = 0;
-let contador2 = 0;
-let contador3 = 0;
-let acumulador = 0;
-let lado;
-let lado2;
-let lado3;
-for(let i = 1; i <= 4; i++){
-   lado = prompt('Ingrese primer lado: ');
-   lado = parseInt(lado);
-   lado2 = prompt('ingrese segundo lado: ');
-   lado2 = parseInt(lado2);
-   lado3 = prompt('Ingrese tercer lado: ');
-   lado3 = parseInt(lado3);
-   if(lado == lado2 && lado == lado3){
-      document.write('es un triangulo equilatero.<br>');
-      contador++;
+let num = prompt('ingrese la cantidad de cordenadas deseadas: ');
+num = parseInt(num);
+let acumuladorUno = 0;
+let acumuladorDos = 0;
+let acumuladorTres = 0;
+let acumuladorCuatro = 0;
+
+for(contador = 1; contador <= num; contador++){
+   let x = prompt('Ingrese la cordenada en x: ');
+   x = parseInt(x);
+   let y = prompt('Ingrese coordenada en y: ');
+   y = parseInt(y);
+   if(x > 0 && y > 0){
+      acumuladorUno++;
    }else{
-      if(lado == lado2 || lado == lado3 || lado2 == lado3){
-         document.write('es un Triangulo isoceles.<br>');
-         contador2++;
+      if(x < 0 && y > 0){
+         acumuladorDos++;
       }else{
-         document.write('es un triangulo escaleno.<br>');
-         contador3++;
+         if(x < 0 && y < 0){
+            acumuladorTres++;
+         }else{
+            if(x > 0 && y < 0){
+               acumuladorCuatro++;
+            }            
+         }
       }
    }
 }
-document.write('<br>');
-document.write('cantidad de triangulos equilateros: ' + contador +'<br>');
-document.write('cantidad de triangulos isoceles: ' + contador2 + '<br>');
-document.write('Cantidad de trinagulos escalenos: ' + contador3 + '<br>');
-if(contador < contador2 && contador < contador3){
-   document.write('Se ingresaron menos triangulos equilateros');
-}else{
-   if(contador2<contador3){
-      document.write('Se ingresaron menos triangulos isoceles');
-   }else{
-      document.write('Se ingresaron menos tringualos escalenos');
-   }
-}
+document.write('cantidad de cordenadas en el primer cuadrante : ' +acumuladorUno + '<br>');
+document.write('cantidad de cordenadas en el segundo cuadrante : ' +acumuladorDos + '<br>');
+document.write('cantidad de cordenadas en el tercer cuadrante : ' +acumuladorTres + '<br>');
+document.write('cantidad de cordenadas en el cuarto cuadrante : ' +acumuladorCuatro);
+
