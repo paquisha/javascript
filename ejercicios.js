@@ -516,37 +516,115 @@
 
 //Escribir un programa que pida ingresar coordenadas (x,y) que representan puntos en el plano. Informar cuántos puntos se han ingresado en el primer, segundo, tercer y cuarto cuadrante. Al comenzar el programa se pide que se ingrese la cantidad de puntos a procesar.
 
-let contador = 0;
-let num = prompt('ingrese la cantidad de cordenadas deseadas: ');
-num = parseInt(num);
-let acumuladorUno = 0;
-let acumuladorDos = 0;
-let acumuladorTres = 0;
-let acumuladorCuatro = 0;
+// let contador = 0;
+// let num = prompt('ingrese la cantidad de cordenadas deseadas: ');
+// num = parseInt(num);
+// let acumuladorUno = 0;
+// let acumuladorDos = 0;
+// let acumuladorTres = 0;
+// let acumuladorCuatro = 0;
 
-for(contador = 1; contador <= num; contador++){
-   let x = prompt('Ingrese la cordenada en x: ');
-   x = parseInt(x);
-   let y = prompt('Ingrese coordenada en y: ');
-   y = parseInt(y);
-   if(x > 0 && y > 0){
-      acumuladorUno++;
-   }else{
-      if(x < 0 && y > 0){
-         acumuladorDos++;
-      }else{
-         if(x < 0 && y < 0){
-            acumuladorTres++;
-         }else{
-            if(x > 0 && y < 0){
-               acumuladorCuatro++;
-            }            
-         }
-      }
-   }
-}
-document.write('cantidad de cordenadas en el primer cuadrante : ' +acumuladorUno + '<br>');
-document.write('cantidad de cordenadas en el segundo cuadrante : ' +acumuladorDos + '<br>');
-document.write('cantidad de cordenadas en el tercer cuadrante : ' +acumuladorTres + '<br>');
-document.write('cantidad de cordenadas en el cuarto cuadrante : ' +acumuladorCuatro);
+// for(contador = 1; contador <= num; contador++){
+//    let x = prompt('Ingrese la cordenada en x: ');
+//    x = parseInt(x);
+//    let y = prompt('Ingrese coordenada en y: ');
+//    y = parseInt(y);
+//    if(x > 0 && y > 0){
+//       acumuladorUno++;
+//    }else{
+//       if(x < 0 && y > 0){
+//          acumuladorDos++;
+//       }else{
+//          if(x < 0 && y < 0){
+//             acumuladorTres++;
+//          }else{
+//             if(x > 0 && y < 0){
+//                acumuladorCuatro++;
+//             }            
+//          }
+//       }
+//    }
+// }
+// document.write('cantidad de cordenadas en el primer cuadrante : ' +acumuladorUno + '<br>');
+// document.write('cantidad de cordenadas en el segundo cuadrante : ' +acumuladorDos + '<br>');
+// document.write('cantidad de cordenadas en el tercer cuadrante : ' +acumuladorTres + '<br>');
+// document.write('cantidad de cordenadas en el cuarto cuadrante : ' +acumuladorCuatro);
 
+//Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
+// a) La cantidad de valores negativos ingresados.
+// b) La cantidad de valores positivos ingresados.
+// c) La cantidad de múltiplos de 15.
+// d) El valor acumulado de los números ingresados que son pares.
+// let contador = 0;
+// let contadorPositivo = 0;
+// let contadorNegativo = 0;
+// let contadorMultiplos = 0;
+// let contadorPares = 0
+// for(contador = 1; contador <= 10; contador++){
+//    let numero = prompt('ingrese numero: ');
+//    numero = parseInt(numero);
+//    if(numero < 0){
+//       contadorNegativo++;
+//    }else{
+//       if(numero > 0){
+//          contadorPositivo++;
+//       }
+//    }
+//    if (numero%15==0 && numero!=0)
+//    {
+//       contadorMultiplos++;
+//    }
+//    if (numero%2==0)
+//    {
+//       contadorPares=contadorPares+numero;
+//    }
+// }
+// document.write('la cantidad de numeros negativos es: ' + contadorNegativo + '<br>');
+// document.write('la cantidad de numeros positivos es: ' + contadorPositivo + '<br>');
+// document.write('la cantidad de multiplos de 15 es: ' + contadorMultiplos + '<br>');
+// document.write('valor acumulado de numeros pares: ' + contadorPares + '<br>');
+
+//Se cuenta con la siguiente información:
+// Las edades de 5 estudiantes del turno mañana.
+// Las edades de 6 estudiantes del turno tarde.
+// Las edades de 11 estudiantes del turno noche.
+// Las edades de cada estudiante deben ingresarse por teclado.
+// a) Obtener el promedio de las edades de cada turno (tres promedios).
+// b) Imprimir dichos promedios (promedio de cada turno).
+// c) Mostrar por pantalla un mensaje que indique cual de los tres turnos tiene un promedio de edades mayor.
+// let i = 0;
+// let suma1 = 0;
+// let edad;
+// for(i = 1; i <= 5; i++){
+//    edad = prompt('ingrese la edad de los estudiantes de turno de la ma;ana: ');
+//    edad = parseInt(edad);
+//    suma1 = suma1 + edad;
+// }
+// let suma2 = 0;
+// for(i = 1; i <= 6; i++){
+//    edad = prompt('ingrese la edad de los estidiantes del turno de la tarde: ');
+//    edad = parseInt(edad);
+//    suma2 = suma2 + edad;
+// }
+// let suma3 = 0;
+// for(i = 1; i <= 11; i++){
+//    edad = prompt('ingrese la edad de los estudiantes del turno de la noche: ');
+//    edad = parseInt(edad);
+//    suma3 = suma3 + edad;
+// }
+// let promedioUno = suma1 / 5;
+// let promediDos = suma2 / 6;
+// let promedioTres = suma3 / 11;
+
+// document.write('promedio de edades de alumnos del turno de la ma;ana: ' + promedioUno + '<br>');
+// document.write('promedio de edades de estudiantes del turno de la tarde: ' + promediDos + '<br>');
+// document.write('promedio de edades de estudiantes del turno de la noche: ' + promedioTres + '<br>');
+// if(promedioUno > promediDos && promedioUno > promedioTres){
+//    document.write('el turno de la ma;ana tiene un promedio mayor de edades' + promedioUno + '<br>');
+// }else{
+//    if(promediDos > promedioTres){
+//       document.write('el turno de la tarde tiene mayor promedio de edades: ' + promediDos + '<br>');
+//    }else{
+//       document.write('el turno de la noche tiene mayor promedio de edades: ' + promedioTres + '<br>');
+//    }
+// }
