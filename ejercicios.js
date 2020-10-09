@@ -781,3 +781,18 @@
 //     let suman = x1 + x2 + x3 + x4 + x5;
 //     return document.write('La suma es: ' + suman);
 // } 
+
+
+//programacion orientada a objetos
+//Confeccionar un programa que muestre en que cuatrimestre del año nos encontramos. Para esto obtener el mes.
+// let fecha = new Date();
+// let mes = fecha.getMonth();
+// if(mes < 4){
+//     document.write('estamos en el primer cuatrimestre del año');
+// }else if(mes < 8){
+//     document.write('estamos en el segundo cuatrimestre');
+// }else{
+//     document.write('estamos en el tercer cuatrimestre');
+// }
+
+
