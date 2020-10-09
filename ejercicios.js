@@ -628,3 +628,63 @@
 //       document.write('el turno de la noche tiene mayor promedio de edades: ' + promedioTres + '<br>');
 //    }
 // }
+
+
+//Elaborar una función a la cual le enviemos tres enteros y muestre el menor
+// let num1 = prompt('Ingrese numero uno: ');
+// num1 = parseInt(num1);
+// let num2 = prompt('Ingrese numero dos: ');
+// num2 = parseInt(num2);
+// let num3 = prompt('Ingrese numero tres: ');
+// num3 = parseInt(num3);
+
+// valoresNumeros(num1, num2, num3);
+
+// function  valoresNumeros(x1, x2, x3){
+
+//     if(x1 < x2 && x1 < x3){
+//         document.write('numero uno es el menor: ' + x1);
+//     }else{
+//         if( x2 < x3){
+//             document.write('numero dos es menor: ' + x2);
+//         }else{
+//             document.write('numero tres es menor: ' +x3);
+//         }
+//     }
+// }
+
+
+//Confeccionar una función a la cual le envíe tres enteros y los muestre ordenados de menor a mayor.
+// let num1 = prompt('Ingrese numero uno: ');
+// num1 = parseInt(num1);
+// let num2 = prompt('Ingrese numero dos: ');
+// num2 = parseInt(num2);
+// let num3 = prompt('Ingrese numero tres: ');
+// num3 = parseInt(num3);
+
+// ordenados(num1, num2, num3);
+
+// function ordenados(x1, x2, x3){
+//     if(x1 < x2 && x1 < x3){
+//         document.write(x1 + ' ');
+//         if(x2 < x3){
+//             document.write(x2 + ' ' +x3);
+//         }else{
+//             document.write(x3 + ' ' +x2);
+//         }
+//     }else if(x2 < x3){
+//         document.write(x2 + ' ');
+//         if(x1 < x3){
+//             document.write(x1 + ' ' + x3);
+//         }else{
+//             document.write(x3 + ' ' + x1);
+//         }
+//     }else{
+//         document.write(x3 + ' ');
+//         if(x1 < x2){
+//             document.write(x1 + ' ' + x2);
+//         }else{
+//             document.write(x2 + ' ' + x1);
+//         }
+//     }
+// }
