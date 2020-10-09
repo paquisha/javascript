@@ -688,3 +688,96 @@
 //         }
 //     }
 // }
+
+//Confeccionar una función a la cual le envíe tres enteros y retorne el mayor de ellos.
+// let num1 = prompt('Ingrese numero uno: ');
+// num1 = parseInt(num1);
+// let num2 = prompt('Ingrese numero dos: ');
+// num2 = parseInt(num2);
+// let num3 = prompt('Ingrese numero tres: ');
+// num3 = parseInt(num3);
+
+// ordenados(num1, num2, num3);
+// function ordenados(x1, x2, x3){
+//     if(x1 > x2 && x1 > x3){
+//         return document.write('El mayor es: ' + x1);
+//     }else{
+//         if(x2 > x3){
+//             return document.write('El mayor es: ' + x2);
+//         }else{
+//             return document.write('El mayor es: ' + x3);
+//         }
+//     }    
+// }
+
+//Elaborar una función a la cual le envíe el valor del lado de un cuadrado y me retorne su perímetro.
+// let lado = prompt('Ingrese un lado del cuadrado: ');
+// lado = parseInt(lado);
+
+// perimetroCuadrado(lado);
+
+
+// document.write('Lado del cuadrado: ' + lado + '<br>');
+
+
+// function perimetroCuadrado(num){
+//     let operacion = num * 4;
+//     return document.write('El perimetro es: ' + operacion + '<br>');
+// }
+
+//Desarrollar una función que retorne la cantidad de dígitos que tiene una variable entera positiva de hasta 5 dígitos.
+// let variable = prompt('Ingrese la variable: ');
+// variable = parseInt(variable);
+
+// digitos(variable);
+
+// function digitos(x1){
+//     if(x1 < 10){
+//         return document.write('Tiene un digito: ' + x1);
+//     }else if(x1 < 99){
+//         return document.write('Tiene dos digitos: ' + x1)
+//     }else if(x1 < 999){
+//         return document.write('Tiene tres digitos: ' + x1);
+//     }else if(x1 < 9999){
+//         return document.write('Tiene cuatro digitos: ' + x1);
+//     }else if(x1 < 99999){
+//         return document.write('Tiene cinco digitos: ' + x1);
+//     }else{
+//         return document.write('Solo hasta 5 cifras');
+//     }
+// }
+
+
+//Elaborar una función que reciba tres enteros y retorne el promedio.
+// let nota1 = prompt('Ingrese nota uno: ');
+// nota1 = parseInt(nota1);
+// let nota2 = prompt('Ingrese nota dos: ');
+// nota2 = parseInt(nota2);
+// let nota3 = prompt('Ingrese nota tres: ');
+// nota3 = parseInt(nota3);
+
+// promedio(nota1, nota2, nota3);
+
+// function promedio(x1, x2, x3){
+//     let promedio = (x1 + x2 + x3)/3;
+//     return document.write('El promedio es: ' + promedio);
+// }
+
+//Confeccionar una función que solicite la carga de 5 valores por teclado y retorne su suma.
+// let num1 = prompt('Ingrese numero uno: ');
+// num1 = parseInt(num1);
+// let num2 = prompt('Ingrese numero dos: ');
+// num2 = parseInt(num2);
+// let num3 = prompt('Ingrese numero tres: ');
+// num3 = parseInt(num3);
+// let num4 = prompt('Ingrese numero cuatro: ');
+// num4 = parseInt(num4);
+// let num5 = prompt('Ingrese numero cinco: ');
+// num5 = parseInt(num5);
+
+// suma(num1, num2, num3, num4, num5);
+
+// function suma(x1,x2,x3,x4,x5){
+//     let suman = x1 + x2 + x3 + x4 + x5;
+//     return document.write('La suma es: ' + suman);
+// } 
