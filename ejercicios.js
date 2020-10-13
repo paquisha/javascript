@@ -795,8 +795,99 @@
 //     document.write('estamos en el tercer cuatrimestre');
 // }
 
+//Desarrollar un programa que permita ingresar un vector de 8 elementos, e informe:
+// El valor acumulado de todos los elementos del vector.
+// El valor acumulado de los elementos del vector que sean mayores a 36.
+// Cantidad de valores mayores a 50.
 
+// let elementos;
+// elementos = new Array(8);
+// cargar(elementos);
+// calcularAcumulado(elementos);
+// mayoresTreintaSeis(elementos);
+// mayoresCincuenta(elementos);
 
+// function cargar(elementos){
+//     let f;
+//     for(f = 0; f < elementos.length; f++){
+//         let v;
+//         v = prompt('Ingrese elementos: ');
+//         elementos[f] = parseInt(v);
+//     }     
+// }
 
+// function calcularAcumulado(elementos){
+//     let total = 0;
+//     let f;
+//     for(f = 0; f < elementos.length; f++){
+//         total = total + elementos[f];
+//     }
+//     document.write('Listado de elementos: <br>');
+//     for(f = 0; f < elementos.length; f ++){
+//         document.write(elementos[f] + '<br>');
+//     }
+//     document.write('Suma de los valores: ' + total + '<br>');
+// }
 
+// function mayoresTreintaSeis(elementos){
+//     let total = 0;
+//     let f;
+//     for(f = 0; f < elementos.length; f++){
+//         if(elementos[f] > 36){
+//             total = total + elementos[f];
+//         }        
+//     }
+//     document.write('suma de elementos mayores a 36: ' + total + '<br>');
+// }
 
+// function mayoresCincuenta(elementos){
+//     let total = 0;
+//     let f;
+//     for(f = 0; f < elementos.length; f++){
+//         if(elementos[f] > 50){
+//             total++;
+//         }
+//     }
+//     document.write('cantidad de elementos mayores a 50: ' + total + '<br>');
+// }
+
+//Realizar un programa que pida la carga de dos vectores numéricos. Obtener la suma de los dos vectores, dicho resultado guardarlo en un tercer vector del mismo tamaño. Sumar componente a componente.
+// El tamaño del vector es a elección.
+
+// let vec1;
+// vec1=new Array(5);
+// let vec2;
+// vec2=new Array(5);
+// let vecsuma;
+// vecsuma=new Array(5);
+// cargarVectores(vec1,vec2);
+// sumarVectores(vec1,vec2,vecsuma);
+// imprimirVector(vecsuma);
+
+// function cargarVectores(vec1, vec2){
+//     let f;
+//     for(f = 0; f < vec1.length; f++){
+//         let valor;
+//         valor = prompt('Ingrese elementos primer vector: ');
+//         vec1[f] = parseInt(valor);
+//     }
+//     for(f = 0; f < vec2.length; f++){
+//         let valor;
+//         valor = prompt('Ingrese elementos del segundo vector: ');
+//         vec2[f] = parseInt(valor);
+//     }
+// }
+
+// function sumarVectores(vec1, vec2, vecsuma){
+//     let f;
+//     for(f = 0; f < vecsuma.length; f++){
+//         vecsuma[f] = vec1[f] + vec2[f];
+//     }
+// }
+
+// function imprimirVector(vecsuma){
+//     let f;
+//     for(f = 0; f < vecsuma.length; f++){
+//         document.write(vecsuma[f] + ' '); 
+//     }
+// }
