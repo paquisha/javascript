@@ -891,3 +891,30 @@
 //         document.write(vecsuma[f] + ' '); 
 //     }
 // }
+
+//Confeccionar un programa que permita cargar un valor comprendido entre 1 y 10. Luego generar un valor aleatorio entre 1 y 10, mostrar un mensaje con el número sorteado e indicar si ganó o perdió:
+
+// let num = prompt('Ingrese un valor entre 1 y 10');
+// num = parseInt(num);
+// let aleatorio = parseInt(Math.random()*10)+1;
+// if(num == aleatorio){
+//     document.write('Numero sorteado es: ' + aleatorio + '<br>');
+//     document.write('numero ingresado por el usaurio es: ' + num);
+// }else{
+//     document.write('Lo siento el numero sorteao fue: ' + aleatorio + '<br>');
+//     document.write('Opcion ingresada es: ' + num)
+// }
+
+//Confeccionar un programa que solicite el ingreso de un número y nos muestre dicho valor elevado a la tercera potencia.
+// let num = prompt('Ingrese numero: ');
+// num = parseInt(num);
+
+// let elevado = Math.pow(num, 3);
+// document.write('numero elevado: ' + elevado);
+
+//Ingresar por teclado un valor y luego mostrar la raiz cuadrada de dicho valor;
+// let num = prompt('Ingrese numero: ');
+// num = parseInt(num);
+
+// let raiz = Math.sqrt(num);
+// document.write('La raiz cuadra es: ' + raiz);
