@@ -919,3 +919,29 @@
 // let raiz = Math.sqrt(num);
 // document.write('La raiz cuadra es: ' + raiz);
 
+
+
+//ngresar una serie de nombres por teclado hasta que se cargue la palabra Fin, y mostrar cuántos nombres se ingresaron.
+// let nombre;
+// let cant=0;
+// do {
+//   nombre=prompt('Ingrese un nombre (Terminar ingresando Fin):','');
+//   cant++;
+// } while (nombre!='Fin');
+// //para descontar la palabra Fin
+// cant--;
+// document.write('Se ingresaron '+cant+' palabras');
+
+
+//Igual al anterior, pero que termine la aplicación sin contemplar mayúsculas ni minúsculas. Es decir que para salir se pueda teclear fin, Fin o FIN.
+// let nombre;
+// let cant=0;
+// do {
+//   nombre=prompt('Ingrese un nombre (Terminar ingresando Fin):','');
+//   cant++;
+//   nombre=nombre.toUpperCase();
+// } while (nombre!='FIN');
+// //para descontar la palabra Fin
+// cant--;
+// document.write('Se ingresaron '+cant+' palabras');
+
