@@ -1,32 +1,12 @@
 'use sctrict'
 
+var nombre = ["Aime", "Grace", "Gabriela", "Evelyn"];
 
-//variables
-let nombre = 'manuel';
-let ci = 1234567890;
+nombre.push("Mishell");
 
-//constantes
-const prueba = 'aqui una prueba';
-
-console.log('soy la constante: ' + prueba);
-
-console.log('soy una variable: ' + ci);
+for(let i = 0; i< nombre.length; i++){
+    console.log("Me cogi a: " + nombre[i]);
+}
 
 
-//tipos de datos primiritvos
-/*
-string
-number
-boolean
-undefined
-null
-*/ 
-
-let nombreDos = 'Andres';//string
-let numero = '13';//numeric
-let verdadero = true;///booleano
-let indefinido = undefined; //undefined
-let nada = null; //nulo
-
-//si queremos conocer el tipo de datos que es usaremos typeOf
 
